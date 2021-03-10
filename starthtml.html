@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="startcss.css" />
+<script src="startjs.js" async></script>
+<title>Yummy Food</title>
+</head>
+<body>
+<div class="navbar">
+         <img id="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXPqe2lRcD3kMWWTbUDWYGIGilGjBrgVg-Q&usqp=CAU"class="logo">
+     <nav>
+      <ul>
+	     <li><a href="mainfile.html">Home</a></li>
+		 <li><a href="#Deals">Deals & Offers</a></li>
+		 <li><a href="#family">Family Pack</a></li>
+		 <li><a href="Contact.html">Contact</a></li>
+		 <li><a href="loginform.html">Login/Signup</a></li>
+	  </ul>
+	  </nav>
+     </div>
+</div>
+    <h2 class="ti">Burger</h2>
+    <div class="container">
+        <div class="articles">
+		<div class="card">
+            <div>
+                <img src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1cmdlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+                <div class="prod">
+                    <h3 class="tit" id="brand1">Veggie</h3>
+                    <h4 id="price1">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="99" value="1">
+                    <select id="size1" name="size1" onclick="deleteE('message1')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(1)">Add</button>
+                    </div>
+                </div>
+                <p id="message1"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1cmdlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+                <div class="prod">
+                    <h3 class="tit" id="brand2">Falafel Burgers</h3>
+                    <h4 id="price2">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity2" name="quantity2" min="1" max="99" value="1">
+                    <select id="size2" name="size2" onclick="deleteE('message2')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(2)">Add</button>
+                    </div>
+                </div>
+                <p id="message2"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8YnVyZ2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+                <div class="prod">
+                    <h3 class="tit" id="brand3">California Burger</h3>
+                    <h4 id="price3">16.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity3" name="quantity3" min="1" max="99" value="1">
+                    <select id="size3" name="size3" onclick="deleteE('message3')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(3)">Add</button>
+                    </div>
+                </div>
+                <p id="message3"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://images.unsplash.com/photo-1575980726530-4e673bfa0ad8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzV8fGJ1cmdlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+                <div class="prod">
+                    <h3 class="tit" id="brand4">Grillable Veggie</h3>
+                    <h4 id="price4">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity4" name="quantity4" min="1" max="99" value="1">
+                    <select id="size4" name="size4" onclick="deleteE('message4')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(4)">Add</button>
+                    </div>
+                </div>
+                <p id="message4"></p>
+            </div>
+			</div>
+            
+        </div>
+		
+		
+		
+        
+    </div>
+	<h2 class="ti">Pizza</h2>
+    <div class="container">
+        <div class="articles">
+		<div class="card">
+            <div>
+                <img src="https://image.freepik.com/free-photo/top-view-arugula-pizza-with-cheese_23-2148574278.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand9">arugula pizza</h3>
+                    <h4 id="price9">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity9" name="quantity9" min="1" max="99" value="1">
+                    <select id="size9" name="size9" onclick="deleteE('message9')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(9)">Add</button>
+                    </div>
+                </div>
+                <p id="message9"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://image.freepik.com/free-photo/delicious-italian-pizza-wooden-table_23-2148643436.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand10">Sicilian Pizza</h3>
+                    <h4 id="price10">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity10" name="quantity10" min="1" max="99" value="1">
+                    <select id="size10" name="size10" onclick="deleteE('message10')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(10)">Add</button>
+                    </div>
+                </div>
+                <p id="message10"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://img.freepik.com/free-photo/delicious-italian-pizza-wooden-table_23-2148643436.jpg?size=626&ext=jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand11">Greek Pizza</h3>
+                    <h4 id="price11">16.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity11" name="quantity11" min="1" max="99" value="1">
+                    <select id="size11" name="size11" onclick="deleteE('message11')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(11)">Add</button>
+                    </div>
+                </div>
+                <p id="message11"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://image.freepik.com/free-photo/top-view-delicious-pizza-wooden-table_23-2148643424.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand12">California Pizza</h3>
+                    <h4 id="price12">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity12" name="quantity12" min="1" max="99" value="1">
+                    <select id="size12" name="size12" onclick="deleteE('message12')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(12)">Add</button>
+                    </div>
+                </div>
+                <p id="message12"></p>
+            </div>
+			</div>
+            
+        </div>
+		
+	</div>
+		<h2 class="ti">Drinks</h2>
+    <div class="container">
+        <div class="articles">
+		<div class="card">
+            <div>
+                <img src="https://media.gettyimages.com/photos/closeup-of-drink-pouring-in-drinking-glass-against-black-background-picture-id989381534?k=6&m=989381534&s=612x612&w=0&h=CsRTYb6OA_w1utWdaelBtg-jzX3KA9MWjrKEmFOGVNA=">
+                <div class="prod">
+                    <h3 class="tit" id="brand17">Coca</h3>
+                    <h4 id="price17">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity17" name="quantity17" min="1" max="99" value="1">
+                    <select id="size17" name="size17" onclick="deleteE('message17')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(17)">Add</button>
+                    </div>
+                </div>
+                <p id="message17"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://images.unsplash.com/photo-1471922597728-92f81bfe2445?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGljZWQlMjBjb2ZmZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+                <div class="prod">
+                    <h3 class="tit" id="brand18">Cold Coffee</h3>
+                    <h4 id="price18">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity18" name="quantity18" min="1" max="99" value="1">
+                    <select id="size18" name="size18" onclick="deleteE('message18')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(18)">Add</button>
+                    </div>
+                </div>
+                <p id="message18"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://previews.123rf.com/images/fahrwasser/fahrwasser1901/fahrwasser190100043/114550929-coffee-cocktails-with-whipped-cream.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand19">Coffee cocktails</h3>
+                    <h4 id="price19">16.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity19" name="quantity19" min="1" max="99" value="1">
+                    <select id="size19" name="size19" onclick="deleteE('message19')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(19)">Add</button>
+                    </div>
+                </div>
+                <p id="message19"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://cdn.rec-engine.com/pg_1,f_auto,fl_lossy,h_233,w_350,c_fill,g_auto,dpr_2,q_auto/7fafee70c8186c4af3fd2c338042c5c2">
+                <div class="prod">
+                    <h3 class="tit" id="brand20">Pina Colada</h3>
+                    <h4 id="price20">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity20" name="quantity20" min="1" max="99" value="1">
+                    <select id="size20" name="size20" onclick="deleteE('message20')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(20)">Add</button>
+                    </div>
+                </div>
+                <p id="message20"></p>
+            </div>
+			</div>
+            
+        </div>
+		
+
+        
+    </div>
+	<h2 class="ti" id="Deals">Deals & Offers</h2>
+    <div class="container">
+        <div class="articles">
+		<div class="card">
+		<img src="https://image.freepik.com/free-photo/delicious-italian-pizza-wooden-table_23-2148643436.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand21">20% off </h3>
+                    <h4 id="price17">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity21" name="quantity21" min="1" max="99" value="1">
+                    <select id="size21" name="size21" onclick="deleteE('message21')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(21)">Add</button>
+                    </div>
+                </div>
+                <p id="message21"></p>
+            
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://image.freepik.com/free-photo/delicious-italian-pizza-wooden-table_23-2148643436.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand22">25% OFF YOUR PURCHASE</h3>
+                    <h4 id="price22">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity22" name="quantity22" min="1" max="99" value="1">
+                    <select id="size22" name="size22" onclick="deleteE('message22')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(22)">Add</button>
+                    </div>
+                </div>
+                <p id="message22"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://img.freepik.com/free-photo/delicious-italian-pizza-wooden-table_23-2148643436.jpg?size=626&ext=jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand23">35% OFF YOUR PURCHASE</h3>
+                    <h4 id="price23">16.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity23" name="quantity23" min="1" max="99" value="1">
+                    <select id="size23" name="size23" onclick="deleteE('message23')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(23)">Add</button>
+                    </div>
+                </div>
+                <p id="message23"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://image.freepik.com/free-photo/top-view-delicious-pizza-wooden-table_23-2148643424.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand24">15% OFF YOUR PURCHASE</h3>
+                    <h4 id="price24">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity24" name="quantity24" min="1" max="99" value="1">
+                    <select id="size24" name="size24" onclick="deleteE('message24')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(24)">Add</button>
+                    </div>
+                </div>
+                <p id="message24"></p>
+            </div>
+			</div>
+            
+        </div>
+		</div>
+		<h2 class="ti"id="family">Family Pack</h2>
+    <div class="container">
+        <div class="articles">
+		<div class="card">
+		<img src="https://www.dominos.co.in/great-deals/online-pizza-coupons/images/story_images/evd/evd-99.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand25">Value Pack </h3>
+                    <h4 id="price25">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity25" name="quantity25" min="1" max="99" value="1">
+                    <select id="size25" name="size25" onclick="deleteE('message25')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(25)">Add</button>
+                    </div>
+                </div>
+                <p id="message25"></p>
+            
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsgDrbb_v9quZdg4tTKsWFDZPUy9VB6WvlIg&usqp=CAU">
+                <div class="prod">
+                    <h3 class="tit" id="brand26">Family Fire Pack</h3>
+                    <h4 id="price26">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity26" name="quantity26" min="1" max="99" value="1">
+                    <select id="size26" name="size26" onclick="deleteE('message26')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(26)">Add</button>
+                    </div>
+                </div>
+                <p id="message26"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTonum9bcpRaOvkAMR067e6ZmOmIsfAYDW4vg&usqp=CAU">
+                <div class="prod">
+                    <h3 class="tit" id="brand27">Supper Pack</h3>
+                    <h4 id="price27">16.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity27" name="quantity27" min="1" max="99" value="1">
+                    <select id="size27" name="size27" onclick="deleteE('message27')">
+                        <option value="size" disabled selected>Size</option>
+                       <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(27)">Add</button>
+                    </div>
+                </div>
+                <p id="message27"></p>
+            </div>
+			</div>
+			<div class="card">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyLD4ZbNv5RIXC1NuVTr_sqBC-B1cvdLfxQ&usqp=CAU">
+                <div class="prod">
+                    <h3 class="tit" id="brand28">Family Pack</h3>
+                    <h4 id="price28">19.90</h4>
+                    <h4>$</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity28" name="quantity28" min="1" max="99" value="1">
+                    <select id="size28" name="size28" onclick="deleteE('message28')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(28)">Add</button>
+                    </div>
+                </div>
+                <p id="message12"></p>
+            </div>
+			</div>
+            
+        </div>
+		
+
+	
+	<div class="cart">
+	<div class="ex3">
+	
+            <h3 class="tit">Cart</h3>
+			<h3 id="total" style="text-align: right;">Total: 0 $</h3>
+			<hr>
+            <!-- list of the articles in the cart -->
+            <ul id="items">
+			<hr>
+            </ul> 
+			
+			<hr>
+           
+		</div>
+		</div>
+    
+</body>
+</html>
